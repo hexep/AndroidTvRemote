@@ -47,7 +47,7 @@ public class AndroidRemoteTv extends BaseAndroidRemoteTv {
             mRemoteSession.connect();
         else {
             mPairingSession = new PairingSession();
-            mPairingSession.pair("192.168.1.8", 6467, new PairingListener() {
+            mPairingSession.pair(host, 6467, new PairingListener() {
                 @Override
                 public void onSessionCreated() {
 
